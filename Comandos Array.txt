@@ -1,0 +1,25 @@
+length - Retorna a quantidade de elementos de um array.
+forEach - Itera sob um array.
+unshift - Adiciona no início do array.
+shift - Exclui um elemento no início do array.
+splice - Altera (insere/excluí) um elemento em uma posição específica do array.
+indexOf - Procura por um valor no array retornando seu índice.
+
+filter -primeiro jeito
+var numeros = [10, 18, 1, 15];
+var maiorQue10 = function(item) {
+ return item > 10;
+}
+var novosNumeros = numeros.filter(maiorQue10);
+console.log(novosNumeros);
+// → [18, 15]
+----------------------------------------------------------
+segundo jeito(mais usado)
+
+var numeros = [10, 18, 1, 15];
+
+var novosNumeros = numeros.filter(function(item)) {
+	return item > 10;
+});
+console.log(novosNumeros);
+----------------------------------------------
